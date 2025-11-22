@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 
 // pages
 import Home from "./pages/Home"
+import Login from "./pages/Login"
+import Signup from "./pages/Signup"
 import Create from "./pages/Create"
 import Update from "./pages/Update"
 
@@ -17,6 +19,8 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/create" element={<Create />} />
         <Route path="/:id" element={<Update />} />
       </Routes>
